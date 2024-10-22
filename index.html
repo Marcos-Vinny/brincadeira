@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincadeira com a Mariana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dialogo" id="dialogo">
+        <h2>Escreva seu nome completo</h2>
+        <input type="text" id="nome" placeholder="Seu nome aqui">
+        <button onclick="verificarNome()">Enviar</button>
+        <div id="mensagem" class="mensagem"></div>
+        <div id="contagem" class="contagem"></div>
+    </div>
+
+    <div class="rosto" id="rosto">
+        <pre>
+          .-""""""-.
+        .'          '.
+       /   O      O   \
+      :               :
+      |      \__/    |   
+      :                :
+       \              /
+        '.          .'
+          '-......-'
+        </pre>
+        <button class="continuar-btn" id="continuar-btn" onclick="mostrarMensagemBoB()">Continuar</button>
+    </div>
+
+    <div class="mensagemBoB" id="mensagemBoB">
+        Bom dia, Mariana! Meu nome é BoB, fui feito por Marcos pra te atentar, ele não tem muito o que fazer, sabe.
+        <button class="continuar-btn" onclick="iniciarPergunta()">Continuar</button>
+    </div>
+
+    <div class="pergunta" id="pergunta">
+        <h2>Qual o nome completo de Marcos?</h2>
+        <div class="opcoes">
+            <button class="opcao" onclick="verificarResposta('Marcos Rocha Silva')">Marcos Rocha Silva</button>
+            <button class="opcao" onclick="verificarResposta('Marcos Vinícius Rocha Silva')">Marcos Vinícius Rocha Silva</button>
+            <button class="opcao" onclick="verificarResposta('Marcos Vinícius Farias Rocha Silva')">Marcos Vinícius Farias Rocha Silva</button>
+            <button class="opcao" onclick="verificarResposta('Marcos Vinícius Farias Silva')">Marcos Vinícius Farias Silva</button>
+        </div>
+        <div id="mensagemResultado" class="mensagemResultado"></div>
+    </div>
+
+    <div class="tela-preta" id="telaPreta">
+        <div class="mensagemFinal" id="mensagemFinal">Então né, era só isso mesmo, ele tava meio sem tempo, mas tem uma última surpresa.</div>
+        <button class="continuar-btn" onclick="confirmarContinuar()">Continuar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

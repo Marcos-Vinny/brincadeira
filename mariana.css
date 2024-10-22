@@ -1,0 +1,18 @@
+body {
+    background-color: black; /* Fundo preto */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da tela */
+    margin: 0; /* Remove margens padrão */
+}
+
+.caixa-mensagem {
+    background-color: white; /* Cor da caixa de mensagem */
+    color: black; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra da caixa */
+    text-align: center; /* Centraliza o texto */
+    width: 300px; /* Largura da caixa */
+}

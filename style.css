@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s;
+    color: white;
+    font-family: monospace;
+    flex-direction: column;
+    position: relative;
+}
+.dialogo {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+h2 {
+    color: black;
+}
+input {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+.continuar-btn {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+.mensagem {
+    margin-top: 15px;
+    color: red;
+}
+.contagem {
+    margin-top: 15px;
+    color: green;
+}
+.rosto {
+    display: none;
+    text-align: center;
+    font-size: 36px;
+}
+.mensagemBoB {
+    display: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    border: 2px solid #0056b3;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+}
+.pergunta {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+}
+.opcao {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    width: 250px;
+}
+.mensagemResultado {
+    display: none;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+.tela-preta {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+}
+.mensagemFinal {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
